@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE6E941B-5B03-4707-9511-D4B0B4DD08E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Car_rentail</RootNamespace>
+    <AssemblyName>Car rentail</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TextBoxCustom">
+      <HintPath>.\TextBoxCustom.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cars.Designer.cs">
+      <DependentUpon>cars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Changepass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Changepass.Designer.cs">
+      <DependentUpon>Changepass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connect.cs" />
+    <Compile Include="custdeatail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custdeatail.Designer.cs">
+      <DependentUpon>custdeatail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custgrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custgrid.Designer.cs">
+      <DependentUpon>custgrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="emailcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emailcode.Designer.cs">
+      <DependentUpon>emailcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grid.Designer.cs">
+      <DependentUpon>grid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup.Designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="cars.resx">
+      <DependentUpon>cars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Changepass.resx">
+      <DependentUpon>Changepass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custdeatail.resx">
+      <DependentUpon>custdeatail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custgrid.resx">
+      <DependentUpon>custgrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emailcode.resx">
+      <DependentUpon>emailcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grid.resx">
+      <DependentUpon>grid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet1.xsc">
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet1.xss">
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallhaven-wyyor6_1920x1080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Accessibility">
+      <Guid>{1EA4DBF0-3C3B-11CF-810C-00AA00389B71}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="img\Audi A4.jpg" />
+    <Content Include="img\BMW M3.jpg" />
+    <Content Include="img\Chevrolet Silverado.jpg" />
+    <Content Include="img\Ford Explorer.jpg" />
+    <Content Include="img\Ford F-150.jpg" />
+    <Content Include="img\Ford Mustang.jpg" />
+    <Content Include="img\Honda Civic.jpg" />
+    <Content Include="img\Honda CR-V.jpg" />
+    <Content Include="img\Honda Pilot.jpg" />
+    <Content Include="img\Jaguar E-PACE.jpg" />
+    <Content Include="img\Jaguar Xe.jpg" />
+    <Content Include="img\Jaguar XF.jpg" />
+    <Content Include="img\Jeep Wrangler.jpg" />
+    <Content Include="img\Kia Sorento.jpg" />
+    <Content Include="img\Rolls-Royce Ghost.jpg" />
+    <Content Include="img\Rolls-Royce Phantom.jpg" />
+    <Content Include="img\Rolls-Royce Wraith.jpg" />
+    <Content Include="img\Tesla Model 3.jpg" />
+    <Content Include="img\Tesla Model S.jpg" />
+    <Content Include="img\Toyota RAV4.jpg" />
+    <None Include="Resources\Add User Male1.png" />
+    <None Include="Resources\Close1.png" />
+    <None Include="Resources\Gmail Login.png" />
+    <None Include="Resources\Customer.png" />
+    <None Include="Resources\Add User Male.png" />
+    <None Include="Resources\Online Payment.png" />
+    <None Include="Resources\Corvette_CINEMATIC_Car_Commercial_I_Blender%281080p%29 %281%29.gif" />
+    <None Include="Resources\Logout.png" />
+    <None Include="Resources\wallhaven-wyyor6_1920x10801.png" />
+    <None Include="Resources\20240725_123048_582.png" />
+    <None Include="Resources\WhatsApp Image 2024-07-25 at 12.19.29_ceb5fbcc.jpg" />
+    <None Include="Resources\black.jpg" />
+    <None Include="Resources\Key.png" />
+    <None Include="Resources\BACK.png" />
+    <None Include="Resources\minimize.png" />
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\Cancel.png" />
+    <None Include="Resources\Minus1.png" />
+    <None Include="Resources\Exit Sign2.png" />
+    <None Include="Resources\Address Book2.png" />
+    <None Include="Resources\Booking3.png" />
+    <None Include="Resources\List2.png" />
+    <None Include="Resources\Home5.png" />
+    <None Include="Resources\Exit Sign.png" />
+    <None Include="Resources\List.png" />
+    <None Include="Resources\Booking1.png" />
+    <None Include="Resources\Booking.png" />
+    <None Include="Resources\Address Book.png" />
+    <None Include="Resources\Home3.png" />
+    <None Include="Resources\Home2.png" />
+    <None Include="Resources\Home1.png" />
+    <None Include="Resources\Home.png" />
+    <None Include="Resources\WhatsApp Image 2024-06-27 at 14.58.10_b02d0646.jpg" />
+    <None Include="Resources\WhatsApp Image 2024-06-26 at 13.15.46_fdce42af.jpg" />
+    <None Include="Resources\WhatsApp Image 2024-06-25 at 19.28.39_82d45b15.jpg" />
+    <None Include="Resources\Home1.ico" />
+    <None Include="Resources\WhatsApp Image 2024-06-25 at 19.00.45_928405061.jpg" />
+    <None Include="Resources\nd1kptsh-removebg-preview.png" />
+    <None Include="Resources\nd1kptsh.png" />
+    <None Include="Resources\Minus-removebg-preview2.png" />
+    <None Include="Resources\Minus-removebg-preview1.png" />
+    <None Include="Resources\Minus-removebg-preview.png" />
+    <None Include="Resources\Minus.png" />
+    <None Include="Resources\WhatsApp_Image_2024-05-30_at_12.43.17_91a7e497-removebg-preview__3_-removebg-preview3.png" />
+    <None Include="Resources\WhatsApp_Image_2024-05-30_at_12.43.17_91a7e497-removebg-preview__3_-removebg-preview2.png" />
+    <None Include="Resources\WhatsApp_Image_2024-05-30_at_12.43.17_91a7e497-removebg-preview__3_-removebg-preview1.png" />
+    <None Include="Resources\WhatsApp_Image_2024-05-30_at_12.43.17_91a7e497-removebg-preview__3_-removebg-preview.png" />
+    <None Include="Resources\WhatsApp_Image_2024-05-30_at_12.43.17_91a7e497-removebg-preview %281%292.png" />
+    <None Include="Resources\WhatsApp_Image_2024-05-30_at_12.43.17_91a7e497-removebg-preview %281%291.png" />
+    <None Include="Resources\wallhaven-4lzrqp_1920x1080.png" />
+    <None Include="Resources\WhatsApp_Image_2024-05-30_at_12.43.17_91a7e497-removebg-preview %285%293.png" />
+    <None Include="Resources\WhatsApp_Image_2024-05-30_at_12.43.17_91a7e497-removebg-preview %285%292.png" />
+    <None Include="Resources\WhatsApp_Image_2024-05-30_at_12.43.17_91a7e497-removebg-preview %285%291.png" />
+    <None Include="Resources\WhatsApp_Image_2024-05-30_at_12.43.17_91a7e497-removebg-preview %285%29.png" />
+    <None Include="Resources\WhatsApp_Image_2024-05-30_at_12.43.17_91a7e497-removebg-preview %283%29.png" />
+    <None Include="Resources\WhatsApp Image 2024-05-30 at 12.43.17_91a7e4972.jpg" />
+    <None Include="Resources\WhatsApp Image 2024-05-30 at 12.43.17_91a7e4971.jpg" />
+    <None Include="Resources\WhatsApp Image 2024-05-30 at 12.43.17_91a7e497.jpg" />
+    <None Include="Resources\WhatsApp_Image_2024-05-30_at_12.43.17_91a7e497-removebg-preview %281%29.png" />
+    <None Include="Resources\wallhaven-eyxxxw_1920x1080.png" />
+    <None Include="Resources\wallhaven-zxvydy_1920x1080.png" />
+    <None Include="Resources\wallhaven-p8ydl3_1920x1080.png" />
+    <None Include="Resources\wallhaven-4dpz63_1920x1080-removebg-preview.png" />
+    <None Include="Resources\black_porsche_911_st_2023_car_4k_5k_hd_cars-removebg-preview.png" />
+    <None Include="Resources\2Search Bar.png" />
+    <None Include="Resources\1Search.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\wallhaven-0p95xm_1920x1080.png" />
+    <None Include="Resources\WhatsApp Image 2024-05-09 at 20.01.40_d858e620.jpg" />
+    <None Include="Resources\Invisible.png" />
+    <None Include="Resources\Eye1.png" />
+    <None Include="Resources\Eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
